@@ -1,328 +1,484 @@
-header {
-  width: 100%;
-  min-height: 400px;
-  padding-top: 3em;
-}
+/* ================================
+   GENERAL
+================================ */
 
-#home header {
-  background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-  background-size: 1500px;
-}
-
-#activities header {
-  background: no-repeat lightgrey url(images/runfly.jpg);
-  background-size: 1500px;
-}
-
-#contact header {
-  background: no-repeat lightgrey url(images/cliff_rock.jpg);
-  background-size: 1500px;
-}
-
-#cliffs header {
-  background: no-repeat lightgrey url(images/forest_cliff.jpg);
-  background-size: 1500px;
-}
-
-/* Home */
-
-#timeofday {
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  background: linear-gradient(
-    0deg,
-    rgba(251, 215, 139, 1) 0%,
-    rgba(118, 213, 245, 1) 100%
-  );
-  color: #3a3a3a;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-#clock {
-  color: #125688;
-}
-
-.main-header {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 700px;
-  min-height: 100px;
-  height: 100px;
-  margin: 2em auto 0 auto;
-}
-
-.main-header .logo img {
-  width: 100px;
-  height: 100px;
-  margin: 0 2em 0 0;
-  float: left;
-}
-
-/* Navigation */
-
-.main-menu {
-  margin-left: 227px;
-  font-weight: 400;
-}
-
-.main-menu ul {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
-.main-menu ul li {
-  list-style-type: none;
-  display: inline-block;
-  float: left;
-  padding-left: 25px;
-  padding-right: 25px;
-  border-left: 1px solid rgba(202, 204, 202, 0.6);
-  line-height: 100px;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.main-menu ul li a {
-  text-decoration: none;
-  color: #888;
-}
-
-.main-menu ul li a:hover {
-  color: #9ed034;
-}
-
-.main-menu ul li.active {
-  background: #9ed034;
-  border: none;
-}
-
-.main-menu ul li.active a {
-  color: #fff;
-}
-
-/* Main content */
-
-main {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 2em 0;
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main h1,
-main h2 {
+#container {
+  width: 100%;
+}
+
+
+/* ================================
+   RESPONSIVE BACKGROUND IMAGES
+================================ */
+
+#home {
+  background-image: url("images/cliff_ocean.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  background-color: white;
+}
+
+#cliffs {
+  background-image: url("images/cliff_rock.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  background-color: white;
+}
+
+#activities {
+  background-image: url("images/runfly.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  background-color: white;
+}
+
+#contact {
+  background-image: url("images/forest_cliff.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  background-color: white;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+  width: 100%;
+  min-height: 400px;
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+.main-header {
+  width: 700px;
+  min-height: 100px;
+  margin: 0 auto;
+
+  background-color: rgba(38, 41, 61, 0.7);
+
+  z-index: 1000;
+}
+
+.navbar {
+  min-height: 100px;
+  padding: 0;
+}
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand img {
+  display: block;
+
+  width: 100px;
+  height: 100px;
+
+  object-fit: contain;
+}
+
+.navbar-nav .nav-item {
+  text-transform: uppercase;
+
+  font-size: 14px;
+}
+
+.navbar-nav .nav-link {
+  padding: 40px 25px !important;
+
+  color: rgb(255, 255, 255) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white !important;
+
+  background-color: #9ed034;
+}
+
+.navbar-nav .active {
+  background-color: #9ed034;
+}
+
+.navbar-nav .active .nav-link {
+  color: white !important;
+}
+
+.navbar-toggler {
+  margin-right: 15px;
+
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ================================
+   TIME
+================================ */
+
+#timeofday {
+  width: 100%;
+
+  padding: 10px;
+
+  text-align: center;
+
+  background-color: white;
+}
+
+
+/* ================================
+   MAIN
+================================ */
+
+main {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 3em 0;
+
+  background-color: white;
+}
+
+main h1 {
+  margin-bottom: 25px;
+
   color: #9ed034;
-}
 
-main p {
-  line-height: 1.5em;
-}
+  font-size: 2em;
 
-/* Activities table */
-
-table {
-  width: 1000px;
-  margin: 4em auto 0 auto;
-  border-collapse: collapse;
-}
-
-caption {
-  background: #852b1b;
-  height: 40px;
-  color: #fff;
-  font-size: 1.3em;
-  font-weight: bold;
-  padding-top: 1em;
-}
-
-thead {
-  background: #bde1ff;
-}
-
-tbody {
-  background: #eeffe6;
   text-align: center;
 }
 
-th,
-td {
-  width: 225px;
-  height: 75px;
-  vertical-align: middle;
-  border: solid 1px #852b1b;
+main h2 {
+  font-size: 1.4em;
 }
 
-th:first-child {
-  width: 125px;
-  height: 50px;
-  background: #4977d1;
-  color: #fff;
+
+/* ================================
+   HOME
+================================ */
+
+.home-box {
+  min-height: 300px;
+
+  padding: 20px;
+
+  border: 1px solid #dddddd;
 }
 
-td:first-child {
-  font-weight: bold;
-  background: #bde1ff;
-}
 
-/* Cliffs */
+/* ================================
+   CLIFFS
+================================ */
 
 #cliffs-container {
-  width: 900px;
-  margin: 2em auto;
-  text-align: center;
+  margin-top: 30px;
 }
 
 .cliff {
-  width: 400px;
-  display: inline-block;
-  margin: 1em;
-  vertical-align: top;
+  margin-bottom: 25px;
+
+  text-align: center;
 }
 
 .cliff h2 {
   margin: 0;
-  padding: 0.5em;
+
+  padding: 8px;
+
   background-color: #852b1b;
-  color: #fff;
+
+  color: white;
+
   font-size: 1.2em;
 }
 
 .cliff img {
-  width: 400px;
-  height: 225px;
   display: block;
+
+  width: 100%;
 }
 
-/* Contact form */
+
+/* ================================
+   RESPONSIVE ACTIVITIES TABLE
+================================ */
+
+.table-responsive {
+  width: 100%;
+
+  overflow-x: auto;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.activity-table,
+table {
+  width: 100%;
+
+  min-width: 700px;
+
+  margin: 2em auto;
+
+  border-collapse: collapse;
+}
+
+caption {
+  caption-side: top;
+
+  padding: 10px;
+
+  background-color: #852b1b;
+
+  color: white;
+
+  text-align: center;
+
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 15px 10px;
+
+  border: 2px solid #852b1b;
+
+  text-align: center;
+
+  white-space: nowrap;
+}
+
+thead th {
+  background-color: #b9dffa;
+
+  color: black;
+}
+
+thead th:first-child {
+  background-color: #4288c3;
+
+  color: white;
+}
+
+tbody td:first-child {
+  background-color: #b9dffa;
+
+  font-weight: bold;
+}
+
+tbody td:not(:first-child) {
+  background-color: #effbdc;
+}
+
+.selectable {
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #9ed034 !important;
+
+  color: white;
+}
+
+
+/* ================================
+   BOOTSTRAP MODAL
+================================ */
+
+.modal-title {
+  font-size: 1.1em;
+}
+
+#selectedActivities p {
+  margin-bottom: 10px;
+}
+
+.modal-footer .btn-success {
+  background-color: #28a745;
+}
+
+
+/* ================================
+   RESPONSIVE CONTACT FORM
+================================ */
 
 form {
-  width: 1000px;
-  margin: 2em auto 0 auto;
+  width: 100%;
+
+  margin-top: 25px;
 }
 
 fieldset {
+  width: 100%;
+
+  padding: 20px;
+
   border: 1px solid #9ed034;
-  padding: 2em;
 }
 
 legend {
-  color: #4977d1;
+  width: auto;
+
+  padding: 0 10px;
+
+  color: #4288c3;
+
+  font-size: 1em;
+
   font-weight: bold;
+
   text-transform: uppercase;
 }
 
-form label {
-  font-weight: bold;
-}
-
-form input[type="text"],
-form input[type="email"],
-form select {
-  width: 50%;
-  height: 25px;
-}
-
-form textarea {
-  width: 50%;
-  height: 150px;
-}
-
-form .commentbox {
+.form-control {
   width: 100%;
 }
 
-form .commentbox textarea {
-  width: 100%;
-  height: 150px;
-  display: block;
-  margin-top: 0.5em;
+.form-group {
+  max-width: 500px;
 }
 
-form .randomcode {
+.commentbox textarea {
+  width: 100%;
+}
+
+.randomcode {
   display: flex;
-  justify-content: flex-end;
+
   align-items: center;
-  gap: 1em;
-  margin-top: 1em;
+
+  gap: 15px;
+
+  margin-top: 20px;
 }
 
-form .randomcode input {
-  width: 12em;
-  height: 2.5em;
+.code-input {
+  width: 220px;
 }
 
-form .randomcode p {
-  width: 8em;
-  height: 2.5em;
-  line-height: 2.5em;
-  margin: 0;
-  background-color: #c0c0c0;
+#codes {
+  display: inline-block;
+
+  padding: 10px 15px;
+
+  background-color: #cccccc;
+}
+
+.button {
+  margin-top: 20px;
+
   text-align: center;
-  font-size: 1.2em;
 }
 
-form .button {
-  text-align: right;
-  margin-top: 1em;
-}
+.button .btn {
+  padding: 8px 25px;
 
-form .button input {
-  width: 8em;
-  height: 2.5em;
-  font-size: 1.2em;
   font-weight: bold;
-  /*background-color: #4977D1;*/
-  color: #ffffff;
-  border: none;
 }
 
-/* Partners */
+.button .fa {
+  margin-right: 5px;
+}
 
-section {
+
+/* ================================
+   PARTNERS
+================================ */
+
+#partners-section {
   width: 100%;
+
   background-color: #4288c3;
 }
 
-section #partners {
-  width: 1200px;
-  padding: 2em 0;
+#partners {
+  width: 100%;
+  max-width: 1200px;
+
   margin: 0 auto;
+
+  padding: 2em 0;
+
+  list-style-type: none;
+
   text-align: center;
 }
 
-section #partners .partner {
-  display: inline-block;
-  margin: 0 0.75em;
-  padding: 1.3em 1.5em;
-  background-color: #fff;
+#partners .partner {
+  margin: 0;
+
+  padding: 15px;
+
+  text-align: center;
+}
+
+#partners .partner img {
+  width: 100px;
+  height: 100px;
+
+  padding: 12px;
+
+  object-fit: contain;
+
+  background-color: white;
+
   border-radius: 50%;
 }
 
-section #partners .partner img {
-  width: 90px;
-  height: 90px;
-}
 
-/* Footer */
+/* ================================
+   FOOTER
+================================ */
 
 footer {
   width: 100%;
-  height: 155px;
+
+  min-height: 155px;
+
   padding-bottom: 1em;
+
   background-color: #ecfab8;
 }
 
+footer #nondisclaimer {
+  min-height: 110px;
+}
+
 footer #nondisclaimer .copy {
-  padding: 3.5em 3.5em 3.5em 13em;
   float: left;
+
+  padding: 3.5em 3.5em 3.5em 13em;
+
   font-size: 0.9em;
 }
 
 footer #nondisclaimer .social {
-  padding: 2.5em;
-  margin-right: 9.25em;
   float: right;
+
+  padding: 2.5em;
+
+  margin-right: 9.25em;
 }
 
 footer #disclaimer {
@@ -330,46 +486,167 @@ footer #disclaimer {
 }
 
 footer #disclaimer p {
-  font-size: 0.85em;
+  margin: 0;
+
+  padding: 10px;
+
   text-align: center;
+
+  font-size: 0.85em;
 }
 
 footer #nondisclaimer .social .fa {
-  padding: 15px;
-  font-size: 15px;
-  width: 15px;
-  text-align: center;
-  text-decoration: none;
-  margin: 0 4px;
-  border-radius: 50%;
-}
+  width: 45px;
 
-footer #nondisclaimer .social .fa:hover {
-  opacity: 0.7;
+  padding: 15px;
+
+  margin: 0 4px;
+
+  border-radius: 50%;
+
+  text-align: center;
+
+  text-decoration: none;
 }
 
 footer #nondisclaimer .social .fa-facebook {
-  background: #3b5998;
+  background-color: #3b5998;
+
   color: white;
 }
 
 footer #nondisclaimer .social .fa-twitter {
-  background: #55acee;
+  background-color: #55acee;
+
   color: white;
 }
 
 footer #nondisclaimer .social .fa-instagram {
-  background: #125688;
+  background-color: #125688;
+
   color: white;
 }
-/* Activities */
 
-.selected {
-    background-color: #9ed034;
-    color: white;
-    font-weight: bold;
+
+/* ================================
+   LARGE BREAKPOINT AND UNDER
+================================ */
+
+@media (max-width: 1199.98px) {
+
+  .main-header {
+    width: 90%;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+
+    top: 100px;
+    right: 0;
+
+    width: 200px;
+
+    background-color: rgba(38, 41, 61, 0.9);
+
+    z-index: 1000;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 15px 25px !important;
+  }
+
+  .navbar-nav .nav-item {
+    border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+  }
+
 }
 
-.selectable {
-    cursor: pointer;
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 991.98px) {
+
+  header {
+    min-height: 330px;
+  }
+
+}
+
+
+/* ================================
+   SMALL / EXTRA SMALL
+================================ */
+
+@media (max-width: 767.98px) {
+
+  .main-header {
+    width: 90%;
+  }
+
+  header {
+    min-height: 260px;
+  }
+
+  main {
+    width: 90%;
+
+    padding: 3em 0;
+  }
+
+  main h1 {
+    font-size: 2.5em;
+  }
+
+  .home-box {
+    min-height: auto;
+
+    margin-bottom: 20px;
+  }
+
+
+  /* Responsive Form */
+
+  fieldset {
+    padding: 15px;
+  }
+
+  .form-group {
+    width: 100%;
+
+    max-width: none;
+  }
+
+  .randomcode {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .code-input {
+    width: 55%;
+  }
+
+
+  /* Footer */
+
+  footer #nondisclaimer .copy {
+    float: none;
+
+    padding: 3em 1em 1em;
+
+    text-align: center;
+  }
+
+  footer #nondisclaimer .social {
+    float: none;
+
+    margin: 0;
+
+    padding: 1em;
+
+    text-align: center;
+  }
+
 }
