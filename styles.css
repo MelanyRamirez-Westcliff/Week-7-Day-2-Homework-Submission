@@ -1,652 +1,553 @@
-/* ================================
-   GENERAL
-================================ */
+/* Header */
 
-html,
-body {
-  margin: 0;
-  padding: 0;
+header {
+    width: 100%;
+    min-height: 275px;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#container {
-  width: 100%;
-}
-
-
-/* ================================
-   RESPONSIVE BACKGROUND IMAGES
-================================ */
+/* Page header images */
 
 #home {
-  background-image: url("images/cliff_ocean.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% auto;
-  background-color: white;
+    background: no-repeat white url(images/cliff_ocean.jpg);
+    background-size: 100% 400px;
 }
 
 #cliffs {
-  background-image: url("images/cliff_rock.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% auto;
-  background-color: white;
+    background: no-repeat white url(images/cliff_ocean.jpg);
+    background-size: 100% 400px;
 }
 
 #activities {
-  background-image: url("images/runfly.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% auto;
-  background-color: white;
+    background: no-repeat white url(images/runfly.jpg);
+    background-size: 100% 400px;
 }
 
 #contact {
-  background-image: url("images/forest_cliff.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% auto;
-  background-color: white;
+    background: no-repeat white url(images/cliff_rock.jpg);
+    background-size: 100% 400px;
 }
 
 
-/* ================================
-   HEADER
-================================ */
-
-header {
-  width: 100%;
-  min-height: 400px;
-}
-
-
-/* ================================
-   NAVIGATION
-================================ */
+/* Navigation */
 
 .main-header {
-  width: 700px;
-  min-height: 100px;
-  margin: 0 auto;
-
-  background-color: rgba(38, 41, 61, 0.7);
-
-  z-index: 1000;
+    background-color: rgba(38, 41, 61, 0.7);
+    width: 100%;
+    min-height: 100px;
+    z-index: 1000;
 }
 
 .navbar {
-  min-height: 100px;
-  padding: 0;
+    max-width: 705px;
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .navbar-brand {
-  margin: 0;
-  padding: 0;
+    padding: 0;
+    margin: 0 2em 0 0;
 }
 
 .navbar-brand img {
-  display: block;
-
-  width: 100px;
-  height: 100px;
-
-  object-fit: contain;
+    width: 100px;
+    height: 100px;
 }
 
 .navbar-nav .nav-item {
-  text-transform: uppercase;
-
-  font-size: 14px;
+    min-height: 100px;
+    border-left: 1px solid rgba(202, 204, 202, 0.6);
 }
 
 .navbar-nav .nav-link {
-  padding: 40px 25px !important;
-
-  color: rgb(255, 255, 255) !important;
+    min-height: 100px;
+    padding: 40px 25px !important;
+    color: rgb(255, 255, 255) !important;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .navbar-nav .nav-link:hover {
-  color: white !important;
-
-  background-color: #9ed034;
+    color: #9ed034 !important;
 }
 
 .navbar-nav .active {
-  background-color: #9ed034;
+    background-color: #9ed034;
 }
 
 .navbar-nav .active .nav-link {
-  color: white !important;
-}
-
-.navbar-toggler {
-  margin-right: 15px;
-
-  border-color: rgba(255, 255, 255, 0.8);
+    color: #fff !important;
 }
 
 
-/* ================================
-   TIME
-================================ */
-
-#timeofday {
-  width: 100%;
-
-  padding: 10px;
-
-  text-align: center;
-
-  background-color: white;
-}
-
-
-/* ================================
-   MAIN
-================================ */
+/* Main */
 
 main {
-  width: 90%;
-  max-width: 1200px;
-
-  margin: 0 auto;
-
-  padding: 3em 0;
-
-  background-color: white;
+    margin: 100px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main h1 {
-  margin-bottom: 25px;
-
-  color: #9ed034;
-
-  font-size: 2em;
-
-  text-align: center;
+    color: #9ed034;
+    font-size: 40px;
 }
 
-main h2 {
-  font-size: 1.4em;
+main h3 {
+    font-size: 25px;
 }
 
 
-/* ================================
-   HOME
-================================ */
+/* Partners */
 
-.home-box {
-  min-height: 300px;
+.partners-section {
+    width: 100%;
+    background-color: #4288C3;
+}
 
-  padding: 20px;
+section #partners {
+    width: 100%;
+    padding: 2em 0;
+    margin: 0;
+    text-align: center;
+}
 
-  border: 1px solid #dddddd;
+section #partners .partner {
+    list-style-type: none;
+    text-align: center;
+    padding: 1em;
+}
+
+section #partners .partner img {
+    width: 90px;
+    height: 90px;
+    padding: 1.3em;
+    box-sizing: content-box;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 
-/* ================================
-   CLIFFS
-================================ */
+/* Footer */
 
-#cliffs-container {
-  margin-top: 30px;
+footer {
+    width: 100%;
+    height: 155px;
+    padding-bottom: 1em;
+    background-color: #ecfab8;
 }
 
-.cliff {
-  margin-bottom: 25px;
-
-  text-align: center;
+footer #nondisclaimer .copy {
+    padding: 3.5em 3.5em 3.5em 13em;
+    float: left;
+    font-size: 0.9em;
 }
 
-.cliff h2 {
-  margin: 0;
-
-  padding: 8px;
-
-  background-color: #852b1b;
-
-  color: white;
-
-  font-size: 1.2em;
+footer #nondisclaimer .social {
+    padding: 2.5em;
+    margin-right: 9.25em;
+    float: right;
 }
 
-.cliff img {
-  display: block;
+footer #disclaimer {
+    clear: both;
+}
 
-  width: 100%;
+footer #disclaimer p {
+    font-size: 0.85em;
+    text-align: center;
+}
+
+footer #nondisclaimer .social .fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+
+footer #nondisclaimer .social .fa:hover {
+    opacity: 0.7;
+}
+
+footer #nondisclaimer .social .fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+footer #nondisclaimer .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+footer #nondisclaimer .social .fa-instagram {
+    background: #125688;
+    color: white;
 }
 
 
-/* ================================
-   RESPONSIVE ACTIVITIES TABLE
-================================ */
+/* Activities */
 
-.table-responsive {
-  width: 100%;
-
-  overflow-x: auto;
-
-  -webkit-overflow-scrolling: touch;
-}
-
-.activity-table,
 table {
-  width: 100%;
-
-  min-width: 700px;
-
-  margin: 2em auto;
-
-  border-collapse: collapse;
+    width: 1000px;
+    margin: 4em auto 0 auto;
 }
 
 caption {
-  caption-side: top;
+    caption-side: top;
+    background: #652B1B;
+    height: 60px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+    text-align: center;
+}
 
-  padding: 10px;
+thead {
+    background: #BDE1FF;
+}
 
-  background-color: #852b1b;
-
-  color: white;
-
-  text-align: center;
-
-  font-weight: bold;
+tbody {
+    background: #EEFFE6;
+    text-align: center;
 }
 
 th,
 td {
-  padding: 15px 10px;
-
-  border: 2px solid #852b1b;
-
-  text-align: center;
-
-  white-space: nowrap;
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852B1B;
 }
 
-thead th {
-  background-color: #b9dffa;
-
-  color: black;
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977D1;
+    color: #fff;
 }
 
-thead th:first-child {
-  background-color: #4288c3;
-
-  color: white;
-}
-
-tbody td:first-child {
-  background-color: #b9dffa;
-
-  font-weight: bold;
-}
-
-tbody td:not(:first-child) {
-  background-color: #effbdc;
-}
-
-.selectable {
-  cursor: pointer;
-}
-
-.selected {
-  background-color: #9ed034 !important;
-
-  color: white;
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
 }
 
 
-/* ================================
-   BOOTSTRAP MODAL
-================================ */
+/* Contact */
 
-.modal-title {
-  font-size: 1.1em;
+.contactinfo .phone,
+.contactinfo .email {
+    padding: 10px 0;
+    margin: 0;
 }
 
-#selectedActivities p {
-  margin-bottom: 10px;
+#contact span:first-child {
+    font-weight: bold;
 }
 
-.modal-footer .btn-success {
-  background-color: #28a745;
+form fieldset {
+    border: 2px groove #9ed034;
+    padding: 0.35em 0.75em 0.625em;
+    text-align: left;
 }
 
-
-/* ================================
-   RESPONSIVE CONTACT FORM
-================================ */
-
-form {
-  width: 100%;
-
-  margin-top: 25px;
-}
-
-fieldset {
-  width: 100%;
-
-  padding: 20px;
-
-  border: 1px solid #9ed034;
+fieldset div {
+    margin: 20px 0 20px 20px;
 }
 
 legend {
-  width: auto;
-
-  padding: 0 10px;
-
-  color: #4288c3;
-
-  font-size: 1em;
-
-  font-weight: bold;
-
-  text-transform: uppercase;
+    width: auto;
+    padding: 0 5px;
+    color: #4977D1;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: inherit;
 }
 
-.form-control {
-  width: 100%;
+label {
+    font-weight: bold;
 }
 
-.form-group {
-  max-width: 500px;
+.textbox label,
+.commentbox label {
+    display: block;
 }
 
-.commentbox textarea {
-  width: 100%;
+.textbox input {
+    margin-bottom: 20px;
 }
 
-.randomcode {
-  display: flex;
-
-  align-items: center;
-
-  gap: 15px;
-
-  margin-top: 20px;
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
-.code-input {
-  width: 220px;
+.selectmenu select {
+    width: 200px;
+    text-align: center;
 }
 
-#codes {
-  display: inline-block;
-
-  padding: 10px 15px;
-
-  background-color: #cccccc;
+textarea {
+    height: 200px;
 }
 
 .button {
-  margin-top: 20px;
-
-  text-align: center;
+    text-align: center;
 }
 
 .button .btn {
-  padding: 8px 25px;
-
-  font-weight: bold;
-}
-
-.button .fa {
-  margin-right: 5px;
+    width: 100px;
 }
 
 
-/* ================================
-   PARTNERS
-================================ */
+/* Random code */
 
-#partners-section {
-  width: 100%;
-
-  background-color: #4288c3;
+.randomcode input {
+    width: 150px;
 }
 
-#partners {
-  width: 100%;
-  max-width: 1200px;
-
-  margin: 0 auto;
-
-  padding: 2em 0;
-
-  list-style-type: none;
-
-  text-align: center;
-}
-
-#partners .partner {
-  margin: 0;
-
-  padding: 15px;
-
-  text-align: center;
-}
-
-#partners .partner img {
-  width: 100px;
-  height: 100px;
-
-  padding: 12px;
-
-  object-fit: contain;
-
-  background-color: white;
-
-  border-radius: 50%;
+.randomcode #codes {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #ccc;
+    text-align: center;
 }
 
 
-/* ================================
-   FOOTER
-================================ */
+/* Cliffs */
 
-footer {
-  width: 100%;
-
-  min-height: 155px;
-
-  padding-bottom: 1em;
-
-  background-color: #ecfab8;
+main .cliffs {
+    width: 850px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 25px;
+    justify-content: center;
 }
 
-footer #nondisclaimer {
-  min-height: 110px;
+.img-container {
+    width: 400px;
+    margin: 0;
 }
 
-footer #nondisclaimer .copy {
-  float: left;
-
-  padding: 3.5em 3.5em 3.5em 13em;
-
-  font-size: 0.9em;
+.image-caption {
+    width: 400px;
+    background-color: #652B1B;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: bold;
+    margin: 0;
 }
 
-footer #nondisclaimer .social {
-  float: right;
-
-  padding: 2.5em;
-
-  margin-right: 9.25em;
-}
-
-footer #disclaimer {
-  clear: both;
-}
-
-footer #disclaimer p {
-  margin: 0;
-
-  padding: 10px;
-
-  text-align: center;
-
-  font-size: 0.85em;
-}
-
-footer #nondisclaimer .social .fa {
-  width: 45px;
-
-  padding: 15px;
-
-  margin: 0 4px;
-
-  border-radius: 50%;
-
-  text-align: center;
-
-  text-decoration: none;
-}
-
-footer #nondisclaimer .social .fa-facebook {
-  background-color: #3b5998;
-
-  color: white;
-}
-
-footer #nondisclaimer .social .fa-twitter {
-  background-color: #55acee;
-
-  color: white;
-}
-
-footer #nondisclaimer .social .fa-instagram {
-  background-color: #125688;
-
-  color: white;
+.cliff-image {
+    display: block;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0;
+    cursor: pointer;
 }
 
 
-/* ================================
-   LARGE BREAKPOINT AND UNDER
-================================ */
+/* Clock */
+
+#timeofday {
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a3a3a;
+    background: linear-gradient(
+        0deg,
+        rgba(251, 215, 139, 1) 0%,
+        rgba(118, 213, 245, 1) 100%
+    );
+    padding: 20px 0;
+}
+
+#clock {
+    color: #125688;
+}
+
+
+/* Lightbox */
+
+.lightbox-toggle {
+    color: black;
+}
+
+.backdrop {
+    z-index: 1;
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.box {
+    z-index: 2;
+    position: fixed;
+    opacity: 1;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #444444;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.box img {
+    width: 100%;
+    margin: 0;
+}
+
+
+/* Activity selection */
+
+#activities tbody td:not(:first-child) {
+    cursor: pointer;
+}
+
+#activities tbody td.tdhighlight {
+    background-color: #9ed034;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Selected activities */
+
+#activities main #displaySelected {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid #9ed034;
+    padding: 0.75em;
+}
+
+#activities main #displaySelected #result,
+#activities main #displaySelected #sendinfo {
+    display: inline-block;
+    margin: 0;
+}
+
+#activities main #result {
+    min-height: 50px;
+    width: 300px;
+    padding: 0;
+}
+
+#activities main #result h4 {
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+
+#activities main #result p {
+    margin: 5px 0;
+}
+
+#activities main #displaySelected #sendinfo input[type="email"] {
+    width: 200px;
+}
+
+
+/* Collapsed navigation */
 
 @media (max-width: 1199.98px) {
 
-  .main-header {
-    width: 90%;
-  }
+    .main-header {
+        min-height: auto;
+    }
 
-  .navbar-collapse {
-    position: absolute;
+    .navbar {
+        max-width: 100%;
+        min-height: 100px;
+        padding: 0 20px;
+    }
 
-    top: 100px;
-    right: 0;
+    .navbar-nav .nav-item {
+        min-height: auto;
+        border-left: none;
+    }
 
-    width: 200px;
+    .navbar-nav .nav-link {
+        min-height: auto;
+        padding: 15px 20px !important;
+    }
 
-    background-color: rgba(38, 41, 61, 0.9);
-
-    z-index: 1000;
-  }
-
-  .navbar-nav .nav-link {
-    padding: 15px 25px !important;
-  }
-
-  .navbar-nav .nav-item {
-    border-bottom: 1px solid rgba(202, 204, 202, 0.6);
-  }
-
+    .navbar-collapse {
+        background-color: rgba(38, 41, 61, 0.9);
+    }
 }
 
 
-/* ================================
-   TABLET
-================================ */
-
-@media (max-width: 991.98px) {
-
-  header {
-    min-height: 330px;
-  }
-
-}
-
-
-/* ================================
-   SMALL / EXTRA SMALL
-================================ */
+/* Smaller screens */
 
 @media (max-width: 767.98px) {
 
-  .main-header {
-    width: 90%;
-  }
+    main {
+        margin: 50px 25px;
+    }
 
-  header {
-    min-height: 260px;
-  }
+    main h1 {
+        font-size: 32px;
+    }
 
-  main {
-    width: 90%;
+    main .cliffs {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
 
-    padding: 3em 0;
-  }
+    .img-container,
+    .image-caption,
+    .cliff-image {
+        width: 100%;
+    }
 
-  main h1 {
-    font-size: 2.5em;
-  }
+    table {
+        width: 1000px;
+    }
 
-  .home-box {
-    min-height: auto;
+    footer {
+        height: auto;
+        overflow: auto;
+    }
 
-    margin-bottom: 20px;
-  }
+    footer #nondisclaimer .copy,
+    footer #nondisclaimer .social {
+        float: none;
+        text-align: center;
+        padding: 2em;
+        margin: 0;
+    }
 
-
-  /* Responsive Form */
-
-  fieldset {
-    padding: 15px;
-  }
-
-  .form-group {
-    width: 100%;
-
-    max-width: none;
-  }
-
-  .randomcode {
-    flex-wrap: wrap;
-
-    justify-content: center;
-  }
-
-  .code-input {
-    width: 55%;
-  }
-
-
-  /* Footer */
-
-  footer #nondisclaimer .copy {
-    float: none;
-
-    padding: 3em 1em 1em;
-
-    text-align: center;
-  }
-
-  footer #nondisclaimer .social {
-    float: none;
-
-    margin: 0;
-
-    padding: 1em;
-
-    text-align: center;
-  }
-
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
+    }
 }
